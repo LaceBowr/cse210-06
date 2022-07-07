@@ -4,7 +4,7 @@ This is a game where you select between three options: rock, paper, or scissors 
 ## Rules
 Rock Paper Scissors is played according to the following rules.
 
-Player selects one of three options, rock (r), paper (p) or scissors (s) at the start of the game.
+Player selects one of three options, rock (R), paper (P) or scissors (S) at the start of the game.
 
 Rock beats scissors, paper beats rock, and scissors beats paper.
 
