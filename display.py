@@ -1,4 +1,5 @@
-from objects.objects import Paper, Rock, Scissors
+from objects import Paper, Rock, Scissors
+
 class Display():
     def __init__(self) -> None:
         pass

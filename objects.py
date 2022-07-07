@@ -1,4 +1,4 @@
-from objects.guess import Guess
+from guess import Guess
 
 
 class Paper(Guess):
