@@ -3,6 +3,7 @@
 from director import Director
 
 def main():
+    #Where the initial play is run and observed in the terminal
     director = Director()
     director.start_game()
 
