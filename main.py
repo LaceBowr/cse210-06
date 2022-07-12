@@ -1,13 +1,19 @@
-
-
+# Import director
 from director import Director
 
+# Create the main function and start the game
+# using director
 def main():
     director = Director()
     director.start_game()
 
+# Create a if statement and add in the name
+# function into the main function to allow
+# the user to guess on Rock, Paper, or Scissors
 if __name__ == "__main__":
     main()
+
+# Previous code
 '''
 def main():
     g = Game()
@@ -28,4 +34,3 @@ def main():
 if __name__ == "__main__":
     main()
 '''
-
