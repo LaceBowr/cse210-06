@@ -9,9 +9,8 @@ Computer_total = 0
 Human_total = 0
 
 class Director():
-    # the Director in Paper-Rock-Sissors 
-    # introduces, starts, collects input and 
-    # updates and concludes the game.
+        #The director moves the decisions of (p, r, s) from the human and the computer 
+        #to other classes or to the display (where things are displayed in the terminal)
 
     def __init__ (self):
         """Constructs a new Director using the specified video service.
@@ -23,6 +22,7 @@ class Director():
         display = Display()
 
     def close_window(self):
+        #completes the game and displays the final result and then ends the session
         while Director.update_score(self) < 3: 
             return Director.start_game(self)
         if Director.update_score(Computer_total) > 2:
@@ -47,6 +47,7 @@ class Director():
         exit()
 
     def start_game(self):
+        #where Director initiates the game by asking what choice is desired from the human player
         instance = Instance()
         instance.Best_of_3()
         instance.final_result()
