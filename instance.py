@@ -8,9 +8,14 @@ class Instance():
     human_wins = 0
     draws = 0
     def __init__ (self):
+        #Instance of the game is like the play and each night it is performed.  
+        #Instances of the game happen one game at a time with the computer playing the 
+        #human. The instance scores are collected for the Human and the Computer
+        #until a winner is established.  ONE round or BEST OF 3 can be played.
         pass
     
     def play_one_round(self):
+        #Human initates the first-single round of play against the computer.
         computer_win = 1
         human_win = 1
         neither_win = 0 
@@ -32,6 +37,7 @@ class Instance():
             self.draws += 1
 
     def Best_of_3(self):
+       #The human player can decide y/n if they want to initiate Best_of_3 play from the terminal
        while self.computer_wins < 2 and self.human_wins < 2:
             try:
                 self.play_one_round()
