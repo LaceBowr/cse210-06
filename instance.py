@@ -43,7 +43,7 @@ class Instance():
                 self.play_one_round()
                 if self.draws + self.human_wins + self.computer_wins == 1:
                     # we only ask this question on the first turn
-                    q = input("Best of 3?: y/n")
+                    q = input("Best of 3? (Y/N): ")
                     if q.lower() != 'y': 
                         break
             except ValueError:
@@ -56,4 +56,3 @@ class Instance():
         else:
             print(f'>>> Human won: {self.human_wins} to {self.computer_wins} <<<')
         print(f'>>> There were {self.draws} draws! <<<')
-        
