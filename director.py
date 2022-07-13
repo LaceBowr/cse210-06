@@ -49,6 +49,7 @@ class Director():
     def start_game(self):
         #where Director initiates the game by asking what choice is desired from the human player
         instance = Instance()
+        print(instance.message)
         instance.Best_of_3()
         instance.final_result()
 

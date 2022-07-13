@@ -12,7 +12,7 @@ class Instance():
         #Instances of the game happen one game at a time with the computer playing the 
         #human. The instance scores are collected for the Human and the Computer
         #until a winner is established.  ONE round or BEST OF 3 can be played.
-        pass
+        self.message="Welcome to Rock Paper Scissors, The rules are simple:\n\nSelect one of three options, rock (r), paper (p) or scissors (s) at the start of the game.\nRock beats scissors, paper beats rock, and scissors beats paper\nIf you win more matches than the computer, You win \n"
     
     def play_one_round(self):
         #Human initates the first-single round of play against the computer.
